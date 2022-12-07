@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Prducts - Hardwood Furnitures </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/hardwood.png" width="350px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="contact and about.html">About</a></li>
+                <li><a href="contact and about.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu1.1.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+    <!--------------- cart items details --------------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/office table1.jpg">
+                        <div>
+                            <p>Grey wood Office table</p>
+                            <small>Price: Ksh. 11,500</small>
+                            <br>
+                            <a href=""> Remove </a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 11,500</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/dinning6.jpg">
+                        <div>
+                            <p>Luxurios dinning set 4-seater</p>
+                            <small>Price: Ksh. 50,000</small>
+                            <br>
+                            <a href=""> Remove </a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 50,000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/sofa2.jpg">
+                        <div>
+                            <p>Comfi 3-seater sofa</p>
+                            <small>Price: Ksh. 17,500</small>
+                            <br>
+                            <a href=""> Remove </a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 17,500</td>
+            </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/shoe rack1.jpg">
+                            <div>
+                                <p>Medium size shoe rack</p>
+                                <small>Price: Ksh. 6,000</small>
+                                <br>
+                                <a href=""> Remove </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Ksh. 6,000</td>
+                </tr>
+        </table>
+
+     <div class="total-price">
+         <table>
+             <tr>
+                 <td>Subtotal</td>
+                 <td>Ksh. 85,000</td>
+             </tr>
+             <tr>
+                <td>Tax</td>
+                <td>Ksh. 135</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Ksh. 85,135</td>
+            </tr>
+         </table>
+     </div>
+
+
+    </div>
+
+  <!----------- footer -------------->
+<div class="footer"> 
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                 <h3>Download Our App</h3>
+                 <p>Download App for Android and ios mobile phone</p>
+                 <div class="app-logo">
+                     <img src="images/playstore.png">
+                     <img src="images/appstore1.png">
+                 </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/hardwood.png">
+                <p>Our purpose is to maintain and continue embracing wood furnitures all over
+                    and making them accessible to many.</p>
+           </div>
+           <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li> Coupons</li>
+                <li> Blog Post</li>
+                <li> Return Policy</li>
+                <li> Join Affiliate</li>
+            </ul>
+       </div>
+       <div class="footer-col-3">
+        <h3>Follow Us</h3>
+        <ul>
+            <li> Facebook  _HARDWOODFURNITURES</li>
+            <li> Instagram  _hardwoodFURNITURES</li>
+            <li> Twitter @hardwoodfurnitures</li>
+            <li> WhatsApp Us +254 789101234</li>
+        </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="Copyright"> Copyright 2022 - Website By Dennis Muriithi</p>
+</div>
+<!-----------js for toggle menu------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
